@@ -130,6 +130,9 @@ $yellow: #e49928;
 	@include default_line();
 	margin-top: 24px;
 	align-self: flex-end;
+	a {
+		color: #fff;
+	}
 }
 ////////////////
 .hero__page {

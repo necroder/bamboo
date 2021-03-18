@@ -207,6 +207,9 @@ a {
   margin-top: 24px;
   align-self: flex-end;
 }
+.author a {
+  color: #fff;
+}
 
 .hero__page {
   display: flex;
