@@ -197,10 +197,10 @@ $yellow: #e49928;
 
 .hero__separator--box {
 	@include dsp(flex, row);
-	@include default_line(22px, 32px);
+	@include default_line(22px, 2rem);
 	color: $text-color;
 	border-left: 2px solid $text-color;
-	margin: 120px 80px 120px 80px;
+	margin: 7.5rem 5rem 7.5rem 5rem;
 
 	.separator--icon {
 		padding-top: 10px;
@@ -240,6 +240,16 @@ $yellow: #e49928;
 	margin: 200px 0 202px 10rem;
 }
 
+.fourth__page {
+	//content
+}
+
+.fifth__page {
+	@include dsp(flex, column);
+	padding: 120px 194px;
+	text-align: center;
+}
+
 .subtitle {
 	@include default_line(32px, 48px);
 	color: $yellow;
@@ -248,4 +258,8 @@ $yellow: #e49928;
 .title {
 	@include default_line(40px, 48px);
 	font-weight: 800;
+}
+
+.green {
+	color: $green;
 }
