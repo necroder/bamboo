@@ -71,6 +71,26 @@ $yellow: #e49928;
 	}
 }
 
+.header {
+	position: absolute;
+	padding: 56px 120px 0 120px;
+	width: 100vw;
+	max-width: 100%;
+	.header__nav {
+		@include dsp(flex, row);
+		position: relative;
+	}
+	.logo {
+		position: absolute;
+		left: 0;
+	}
+
+	.menu {
+		position: absolute;
+		right: 0;
+	}
+}
+
 //footer
 .footer {
 	@include dsp(flex, column);

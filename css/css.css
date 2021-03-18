@@ -137,6 +137,26 @@ a {
   text-decoration: none;
 }
 
+.header {
+  position: absolute;
+  padding: 56px 120px 0 120px;
+  width: 100vw;
+  max-width: 100%;
+}
+.header .header__nav {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.header .logo {
+  position: absolute;
+  left: 0;
+}
+.header .menu {
+  position: absolute;
+  right: 0;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
