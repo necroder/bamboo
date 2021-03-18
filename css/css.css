@@ -138,9 +138,9 @@ a {
 }
 
 .footer {
-  color: white;
   display: flex;
   flex-direction: column;
+  color: white;
   background: linear-gradient(180deg, #3f5446 0%, #5d7163 100%);
   mix-blend-mode: normal;
   border-top-left-radius: 10rem;
@@ -169,16 +169,16 @@ a {
 .footer__about {
   display: flex;
   flex-direction: column;
-  width: 247px;
-  height: 208px;
   font-size: 1rem;
   line-height: 2rem;
+  width: 247px;
+  height: 208px;
 }
 
 .footer__about--title {
-  font-weight: 800;
   font-size: 1rem;
   line-height: 2rem;
+  font-weight: 800;
   margin-bottom: 1rem;
 }
 
@@ -195,17 +195,17 @@ a {
 .sociales {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   font-size: 1rem;
   line-height: 2rem;
+  justify-content: space-between;
   margin-top: 8px;
 }
 
 .author {
-  margin-top: 24px;
-  align-self: flex-end;
   font-size: 1rem;
   line-height: 2rem;
+  margin-top: 24px;
+  align-self: flex-end;
 }
 
 .hero__page {
@@ -214,7 +214,6 @@ a {
   justify-content: space-between;
   align-content: space-between;
   color: #43383c;
-  letter-spacing: 0.130667px;
 }
 
 .hero__page--text {
@@ -223,21 +222,20 @@ a {
   align-content: center;
   justify-content: center;
   margin: 261px 187px 82px 160px;
-  width: 570px;
   height: 368px;
 }
 
 .hero__title {
-  font-weight: 800;
   font-size: 7.5rem;
   line-height: 9rem;
+  font-weight: 800;
 }
 
 .p-paragraph {
-  color: #43383c;
-  margin: 24px 0 48px 0;
   font-size: 1.5rem;
   line-height: 2rem;
+  color: #43383c;
+  margin: 24px 0 48px 0;
 }
 
 .btn-donate {
@@ -299,12 +297,10 @@ a {
   height: 0.9em;
 }
 
-.hero__page--img-container {
-  height: 100%;
-  background: linear-gradient(180.01deg, rgba(0, 0, 0, 0.5) -57.67%, rgba(0, 0, 0, 0) 99.99%);
-}
 .hero__page--img-container img {
+  height: 44rem;
   border-bottom-right-radius: 150px;
+  background: linear-gradient(180.01deg, rgba(0, 0, 0, 0.5) -57.67%, rgba(0, 0, 0, 0) 99.99%);
 }
 
 .hero__separator {
@@ -317,11 +313,11 @@ a {
 .hero__separator--box {
   display: flex;
   flex-direction: row;
+  font-size: 22px;
+  line-height: 32px;
   color: #43383c;
   border-left: 2px solid #43383c;
   margin: 120px 80px 120px 80px;
-  font-size: 22px;
-  line-height: 32px;
 }
 .hero__separator--box .separator--icon {
   padding-top: 10px;
@@ -366,15 +362,15 @@ a {
 }
 
 .subtitle {
-  color: #e49928;
   font-size: 32px;
   line-height: 48px;
+  color: #e49928;
 }
 
 .title {
-  font-weight: 800;
   font-size: 40px;
   line-height: 48px;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=css.css.map */

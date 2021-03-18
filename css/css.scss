@@ -7,6 +7,21 @@ $text-color: #43383c;
 $green: #2d4d42;
 $yellow: #e49928;
 
+//display mixin
+@mixin dsp($mode: "flex", $dir) {
+	display: $mode;
+	@if ($mode == "flex") {
+		flex-direction: $dir;
+	} @else {
+		//something here
+	}
+}
+//font size - line height mixin
+@mixin default_line($size: 1rem, $lheight: 2rem) {
+	font-size: $size;
+	line-height: $lheight;
+}
+//button specific mixin, can probably rework?
 @mixin button($color, $txtcolor: $color, $border: none, $background: $color) {
 	text-decoration: none;
 
@@ -60,9 +75,8 @@ $yellow: #e49928;
 }
 //footer
 .footer {
+	@include dsp(flex, column);
 	color: white;
-	display: flex;
-	flex-direction: column;
 	background: linear-gradient(180deg, #3f5446 0%, #5d7163 100%);
 	mix-blend-mode: normal;
 	border-top-left-radius: 10rem;
@@ -72,9 +86,7 @@ $yellow: #e49928;
 }
 
 .logo {
-	display: flex;
-	flex-direction: column;
-
+	@include dsp(flex, column);
 	.logo__img {
 		align-self: center;
 		margin-bottom: 14.48px;
@@ -82,85 +94,70 @@ $yellow: #e49928;
 }
 
 .footer__container {
-	display: flex;
-	flex-direction: row;
+	@include dsp(flex, row);
 	justify-content: space-between;
 	border-bottom: 0.5px solid #c4d0cc;
 	padding-bottom: 88px;
 }
 
 .footer__about {
-	display: flex;
-	flex-direction: column;
+	@include dsp(flex, column);
+	@include default_line();
 	width: 247px;
 	height: 208px;
-	font-size: 1rem;
-	line-height: 2rem;
 }
 
 .footer__about--title {
+	@include default_line();
 	font-weight: 800;
-	font-size: 1rem;
-	line-height: 2rem;
 	margin-bottom: 1rem;
 }
 
 .footer__list {
-	display: flex;
-	flex-direction: column;
-	font-size: 1rem;
-	line-height: 2rem;
+	@include dsp(flex, column);
+	@include default_line();
 	.footer__about--paragraph {
 		margin-bottom: 1rem;
 	}
 }
 
 .sociales {
-	display: flex;
-	flex-direction: row;
+	@include dsp(flex, row);
+	@include default_line();
 	justify-content: space-between;
-	font-size: 1rem;
-	line-height: 2rem;
 	margin-top: 8px;
 }
 
 .author {
+	@include default_line();
 	margin-top: 24px;
 	align-self: flex-end;
-	font-size: 1rem;
-	line-height: 2rem;
 }
 ////////////////
 .hero__page {
-	display: flex;
-	flex-direction: row;
+	@include dsp(flex, row);
 	justify-content: space-between;
 	align-content: space-between;
 	color: $text-color;
-	letter-spacing: 0.130667px;
 }
 
 .hero__page--text {
-	display: flex;
-	flex-direction: column;
+	@include dsp(flex, column);
 	align-content: center;
 	justify-content: center;
 	margin: 261px 187px 82px 160px;
-	width: 570px;
 	height: 368px;
 }
 
 .hero__title {
+	@include default_line(7.5rem, 9rem);
 	font-weight: 800;
-	font-size: 7.5rem;
-	line-height: 9rem;
 }
 
 .p-paragraph {
+	@include default_line(1.5rem);
 	color: $text-color;
 	margin: 24px 0 48px 0;
-	font-size: 1.5rem;
-	line-height: 2rem;
 }
 
 //button($color, $txtcolor: $color, $border: none, $background: $color)
@@ -179,33 +176,30 @@ $yellow: #e49928;
 }
 
 .hero__page--img-container {
-	height: 100%;
-
-	background: linear-gradient(
-		180.01deg,
-		rgba(0, 0, 0, 0.5) -57.67%,
-		rgba(0, 0, 0, 0) 99.99%
-	);
 	img {
+		height: 44rem;
 		border-bottom-right-radius: 150px;
+		background: linear-gradient(
+			180.01deg,
+			rgba(0, 0, 0, 0.5) -57.67%,
+			rgba(0, 0, 0, 0) 99.99%
+		);
 	}
 }
 
 .hero__separator {
-	display: flex;
-	flex-direction: row;
+	@include dsp(flex, row);
 	justify-content: space-around;
 	align-content: space-around;
 }
 
 .hero__separator--box {
-	display: flex;
-	flex-direction: row;
+	@include dsp(flex, row);
+	@include default_line(22px, 32px);
 	color: $text-color;
 	border-left: 2px solid $text-color;
 	margin: 120px 80px 120px 80px;
-	font-size: 22px;
-	line-height: 32px;
+
 	.separator--icon {
 		padding-top: 10px;
 		margin: 0 21px;
@@ -213,8 +207,7 @@ $yellow: #e49928;
 }
 
 .second__page {
-	display: flex;
-	flex-direction: row;
+	@include dsp(flex, row);
 	justify-content: space-between;
 	align-content: space-between;
 }
@@ -224,8 +217,7 @@ $yellow: #e49928;
 	margin-right: 120px;
 }
 .second__page--text {
-	display: flex;
-	flex-direction: column;
+	@include dsp(flex, column);
 	justify-content: center;
 	align-content: center;
 	margin-right: 120px;
@@ -233,8 +225,7 @@ $yellow: #e49928;
 }
 
 .third__page {
-	display: flex;
-	flex-direction: row;
+	@include dsp(flex, row);
 }
 
 .third__page--img {
@@ -243,19 +234,16 @@ $yellow: #e49928;
 }
 
 .third__page--text {
-	display: flex;
-	flex-direction: column;
+	@include dsp(flex, column);
 	margin: 200px 0 202px 10rem;
 }
 
 .subtitle {
+	@include default_line(32px, 48px);
 	color: $yellow;
-	font-size: 32px;
-	line-height: 48px;
 }
 
 .title {
+	@include default_line(40px, 48px);
 	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
 }
