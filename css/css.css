@@ -244,7 +244,7 @@ a {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  margin: 261px 187px 82px 160px;
+  margin: 261px 187px 261px 160px;
   width: 570px;
   height: 368px;
 }
@@ -322,7 +322,6 @@ a {
 }
 
 .hero__page--img-container img {
-  height: 44rem;
   border-bottom-right-radius: 150px;
   background: linear-gradient(180.01deg, rgba(0, 0, 0, 0.5) -57.67%, rgba(0, 0, 0, 0) 99.99%);
 }
@@ -382,7 +381,34 @@ a {
 .third__page--text {
   display: flex;
   flex-direction: column;
-  margin: 200px 0 202px 10rem;
+  margin: 200px 0 200px 10rem;
+}
+
+.fourth__page {
+  display: inline-grid;
+  grid-template-columns: [first] auto [second] auto [third] auto [fourth] auto [fifth] auto;
+  grid-template-rows: [first] auto [second] auto [third] auto;
+  gap: 0.25rem 0.25rem;
+}
+
+.img1 {
+  grid-area: first/first/second/third;
+}
+
+.img2 {
+  grid-area: first/third/second/fourth;
+}
+
+.img3 {
+  grid-area: first/fourth/third/fifth;
+}
+
+.img4 {
+  grid-area: second/first/third/second;
+}
+
+.img5 {
+  grid-area: second/second/third/fourth;
 }
 
 .fifth__page {
