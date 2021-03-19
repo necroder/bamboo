@@ -260,10 +260,7 @@ $yellow: #e49928;
 }
 
 .fourth__page {
-	// width: 100vw;
-	// max-width: 100%;
 	display: inline-grid;
-
 	grid-template-columns: [first]auto [second]auto [third]auto [fourth]auto [fifth]auto;
 	grid-template-rows: [first]auto [second]auto [third]auto;
 	gap: 0.25rem 0.25rem;
