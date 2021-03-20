@@ -71,6 +71,12 @@ $yellow: #e49928;
 	}
 }
 
+html {
+	@include mxFlex(flex, column);
+	align-items: center;
+	justify-items: center;
+}
+
 .header {
 	position: absolute;
 	padding: 56px 120px 0 120px;
@@ -241,16 +247,17 @@ $yellow: #e49928;
 	@include mxFlex(flex, column);
 	justify-content: center;
 	align-content: center;
-	margin-right: 120px;
+	margin-right: 166px;
 	width: 590px;
 }
 
 .third__page {
 	@include mxFlex(flex, row);
+	justify-content: center;
+	align-content: center;
 }
 
 .third__page--img {
-	height: 100%;
 	margin-top: 51px;
 }
 
