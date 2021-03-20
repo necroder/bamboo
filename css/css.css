@@ -1,4 +1,9 @@
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@font-face {
+  font-family: "GreycliffCF-Regular";
+  src: url("../source/fonts/GreycliffCF-Regular.eot");
+  src: url("../source/fonts/GreycliffCF-Regular.otf") format("otf"), url("../source/fonts/GreycliffCF-Regular.woff") format("woff"), url("../source/fonts/GreycliffCF-Regular.woff2") format("woff2"), url("../source/fonts/GreycliffCF-Regular.ttf") format("truetype");
+}
 html,
 body,
 div,
@@ -105,7 +110,7 @@ section {
 
 body {
   line-height: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "GreycliffCF-Regular";
   font-size: 16px;
 }
 
@@ -138,10 +143,7 @@ a {
 }
 
 html {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
+  overflow-x: hidden;
 }
 
 .header {
@@ -397,6 +399,9 @@ html {
   grid-template-columns: [first] auto [second] auto [third] auto [fourth] auto [fifth] auto;
   grid-template-rows: [first] auto [second] auto [third] auto;
   gap: 0.25rem 0.25rem;
+}
+.fourth__page .fpi {
+  object-fit: cover;
 }
 
 .img1 {
