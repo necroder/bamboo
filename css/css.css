@@ -141,6 +141,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .header {
   position: absolute;
   padding: 56px 120px 0 120px;
